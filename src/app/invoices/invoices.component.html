@@ -1,0 +1,83 @@
+<div class="container-fluid" style="padding:35px">
+  <div class="row">
+    <app-navbar [ChosenPage]="'invoices'"></app-navbar>
+    <div class="col-10 offset-md-2" style="padding-left:80px">
+      <div class="container-fluid" style="margin:0">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="slog">
+              <p class="main-slog">Invoices</p>
+              <p class="sec-slog">Explore all your units</p>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="top-items">
+              <input type="text" placeholder="Search anything" />
+              <span class="bi-search"></span>
+              <p class="top-button">+ Add Invoice</p>
+              <p class="top-button">+ Action</p>
+              <p class="notifi bi-bell-fill">{{ noti_num }}</p>
+              <img class="user-img" [src]="user_img" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <app-graphs></app-graphs>
+      <table class="table myTable">
+        <thead>
+          <tr class="head-invoices">
+            <td>ACTIONS</td>
+            <td>TENNANT NAME</td>
+            <td>UNIT NAME</td>
+            <td>UNIT NUM</td>
+            <td>ZONE</td>
+            <td>DATE FROM</td>
+            <td>DATE TO</td>
+            <td>STATUS</td>
+          </tr>
+          <tr class="mid-invoices">
+            <td></td>
+            <td><span>UNIT NAME</span></td>
+            <td><span>FLOOR</span></td>
+            <td><span>UNIT NUM</span></td>
+            <td><span>SIZE</span></td>
+            <td><span>BEDROOMS</span></td>
+            <td><span>PATHROOMS</span></td>
+            <td><span>STATUS</span></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let invoice of invoices">
+            <td>
+                <button class="icon-btn"><span class="bi-pencil-square"></span></button>
+                <button class="icon-btn"><span class="bi-trash"></span></button>
+            <td>
+              <span>{{ invoice.unit_name }}</span>
+            </td>
+            <td>
+              <span>{{ invoice.floor }}</span>
+            </td>
+            <td>
+              <span>{{ invoice.unit_num }}</span>
+            </td>
+            <td>
+              <span>{{ invoice.size }}</span>
+            </td>
+            <td>
+              <span>{{ invoice.bedrooms }}</span>
+            </td>
+            <td>
+              <span>{{ invoice.pathrooms }}</span>
+            </td>
+            <td
+              [class.ava]="invoice.status === 'available'"
+              [class.unava]="invoice.status === 'unavailable'"
+            >
+              <span>{{ invoice.status | uppercase }}</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

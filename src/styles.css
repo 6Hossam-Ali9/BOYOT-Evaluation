@@ -1,1 +1,301 @@
-/* You can add global styles to this file, and also import other style files */
+ul{
+    display: block;
+}
+body{
+    background-image: linear-gradient(to bottom right, #f8f0f2, #e6e5fd);;
+}
+li{
+    list-style: none;
+}
+.logo{
+    width: 80px;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:50px;
+}
+.navbar{
+    width: 100%;
+    height:100%;
+    display: block;    
+    padding: 4px;
+    margin: 15px;
+    border-radius: 40px;
+    background: linear-gradient( #0b22f9, #fda575);
+    box-shadow: 20px 5px 1px 2px #dbdbdb;
+}
+.nav-elm{
+    margin: 0px 20px; 
+    font-weight: bold;
+}
+.navbar li{
+    color: #545454;
+    cursor: pointer;
+    margin-bottom: 50px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    text-align: center;
+    padding: 20px; 
+    font-size:1.2em;
+    margin-left:30px;
+    font-weight: 600;
+}
+
+.navbar li::before{
+    margin-left:-30px;
+}   
+
+.navbar li:hover, li.activee{
+    background: #6a4fbb;
+    color:#FFF;
+}
+
+.navbar .content{
+    background: linear-gradient(#f1f2fe, #fff9f7);
+    border-radius: 40px;
+    padding-bottom: 10px;
+    height:100%;
+    padding-top:45px
+}
+.navbar .content ul{padding:0}
+
+.top-page{
+    margin: 10px 300px;
+}
+.slog{
+    display: inline-block;
+    font-weight: 600;
+    line-height: 0.9em;
+}
+.main-slog{
+    font-size: 2em;
+    color: #5e5d75;
+    margin-top: 30px;
+}
+.sec-slog{
+    font-size: 0.8em;
+    color: #bdbcd0;
+}
+.top-items{
+    text-align: right;
+}
+.top-items input{
+    display: inline-block;
+    border: 0px;
+    border-radius: 100px;
+    background: #fbfbfb;
+    box-shadow: 5px 5px 5px 5px #e5e4f6; 
+    padding: 10px 100px;
+    color: #888888;
+    font-size: 1.4em;
+}
+.top-items span{
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+    text-align: center;
+    pointer-events: none;
+    margin-left: -40px;
+    margin-top: 25px;
+}
+.top-button{
+    display: inline-block;
+    margin-left:70px;
+    color: white;
+    border: 0px;
+    background: #4d42e7;
+    border-radius: 200px;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 7px 50px;
+    box-shadow: 5px 5px 5px 5px #d9d8ff;
+    cursor: pointer;
+}
+.top-button:hover{
+    background: #0b22f9;
+}
+
+.notifi{
+    display: inline-block;
+    margin-left:70px;
+    margin-top: 15px;
+    background-color: #ececed;
+    border:3px  solid #f7f7f9;
+    border-radius: 150px;
+    padding: 15px;
+    cursor: pointer;
+}
+.notifi:hover{
+    border: 3px solid black;
+}
+.top-items img{
+    display: inline-block;
+    margin-left: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 200px;
+    padding: 4px;
+    background: linear-gradient(to bottom right, #5143de, #ecaa6f);
+    cursor: pointer;
+}
+
+.full-width-row{
+    width:100%;
+    padding-top:20px;
+}
+.myTable, .myTable thead{
+    border-radius: 25px
+}
+.myTable thead tr td:last-child{
+    border-top-right-radius: 25px;
+}
+.myTable thead tr td:first-child{
+    border-top-left-radius: 25px;
+}
+.myTable{
+    background-color:#FFF;
+}
+.myTable thead td{
+    padding: 30px;
+}
+.my-graph{
+    padding-top:55px;
+    padding-bottom:100px;
+}
+.graph{
+    display: inline-block;
+    background: #fffefe;
+    border: 0px;
+    border-radius: 60px;
+    width: 400px;
+    height: 265px;
+    box-shadow: 10px 10px 10px 10px #f4f4f7;
+}
+
+.graph-name{
+    display: inline-block;
+    font-size: 1em;
+    color: #b7b7c1;
+    font-weight: 600;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.good-graph{
+    display: inline-block;
+    margin-left: 160px;
+    color: #31d0ad;
+    font-size: 0.8em;
+    font-weight: 500;
+
+}
+
+.bad-graph{
+    display: inline-block;
+    margin-left: 160px;
+    color: #e3507a;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.graph-big{
+    display: inline-block;
+    color: #828194;
+    font-size: 1.4em;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-weight: bolder; 
+}
+
+.graph-dummy{
+    display: block;
+    text-align: center;
+    margin-top: 40px;     
+}
+
+
+
+.head-invoices td{
+    color: #545454;
+    font-size: 1.1em;
+}
+
+.mid-invoices span{
+    color: #b9b9c3;
+    border: 2px solid #e8e8ea;
+    border-radius: 100px;
+    font-size: .7em;
+    padding: 7px 25px;
+}
+
+.fixed-nav{
+    position:fixed;
+    top:15px;
+    bottom:15px;
+    left:20px;
+    padding-right: 40px;
+    bottom:45px;
+}
+
+.myTable thead{
+    font-weight: 600;
+    
+}
+.myTable thead td{
+    cursor: pointer;
+}
+.myTable thead .head-invoices td:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.myTable tbody tr td {
+    padding: 33px 0;
+    font-size: 1.2em;
+    color:#6b6b6b;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+.myTable tbody tr td:last-child{
+    border-right:0
+}
+td.ava span, td.unava span{
+    color: #FFF;
+    border-radius: 100px;
+    border: 0px; 
+    padding: 5px 25px;
+    font-size:0.9em;
+    font-weight: 600;
+    width:145px;
+    display:inline-block;
+}
+td.ava span{
+    background-color: #1dca39;
+
+}
+td.unava span{
+    background-color: red;
+}
+
+td{
+    text-align: center;
+}
+
+.icon-btn{
+    background:0;
+    border:0;
+    font-size: 1.25em;
+    color:rgba(0,0,0,0.5);
+}
+.icon-btn:hover{
+    transform: scale(1.1);
+    transition: all 0.1s;
+    margin-top:-15px;
+}
+
+.icon-btn:hover .bi-trash{
+    color:red;
+}
+.icon-btn:hover .bi-pencil-square{
+    color:navy;
+}

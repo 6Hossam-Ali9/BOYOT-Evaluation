@@ -1,0 +1,39 @@
+<div class="fixed-nav col-md-2">
+  <div class="navbar">
+    <div class="content">
+      <img src="../assets/boyot-logo.png" class="logo" />
+      <ul>
+        <li
+          [class.activee]="ChosenPage === 'dashboard'"
+          [class.bi-microsoft]="true"
+        >
+          <span class="nav-elm">Dashboard</span>
+        </li>
+        <li
+          [class.activee]="ChosenPage === 'invoices'"
+          [class.bi-calendar-check]="true"
+        >
+          <span class="nav-elm">Invoices</span>
+        </li>
+        <li [class.activee]="ChosenPage === 'payers'" [class.bi-person]="true">
+          <span class="nav-elm">Payers</span>
+        </li>
+        <li
+          [class.activee]="ChosenPage === 'balance'"
+          [class.bi-cash-stack]="true"
+        >
+          <span class="nav-elm">Balance</span>
+        </li>
+        <li
+          [class.activee]="ChosenPage === 'units'"
+          [class.bi-house-fill]="true"
+        >
+          <span class="nav-elm">Units</span>
+        </li>
+        <li [class.activee]="ChosenPage === 'settings'" [class.bi-gear]="true">
+          <span class="nav-elm">Settings</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

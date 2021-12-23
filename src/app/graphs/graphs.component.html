@@ -1,0 +1,21 @@
+<div class="my-graph">
+    <div class="container-fluid">
+            <div class="row full-width-row">
+                    <div class="col-md-3 col-sm-6" *ngFor="let graph of graphs">
+        <div class="graph">
+            <div class="graph-unit">
+                <p class="graph-name">{{graph.name}}</p>
+                <p 
+                [class.bi-arrow-down-right]= "graph.small_num < 0"
+                [class.bi-arrow-up-right]= "graph.small_num >= 0"
+                [class.bad-graph]= "graph.small_num < 0"
+                [class.good-graph]= "graph.small_num >= 0">
+               {{graph.small_num>0?'+':''}}{{graph.small_num}}</p>
+                <p class="graph-big">{{graph.big_num}}</p>
+                <p class="graph-dummy">Some sort of a graph</p>
+            </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
